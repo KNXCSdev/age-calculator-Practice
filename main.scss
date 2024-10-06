@@ -1,0 +1,93 @@
+:root {
+  --purple: hsl(259, 100%, 65%);
+  --lightred: hsl(0, 100%, 67%);
+  --white: hsl(0, 0%, 100%);
+  --offwhite: hsl(0, 0%, 94%);
+  --lightgrey: hsl(0, 0%, 86%);
+  --smokeygrey: hsl(0, 1%, 44%);
+  --offblack: hsl(0, 0%, 8%);
+}
+html {
+  font-size: 62.5%;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: sans-serif;
+  line-height: 1;
+  background-color: var(--offwhite);
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+input {
+  font-size: 3.2rem;
+}
+.container {
+  max-width: 120rem;
+  margin: 0 auto;
+  background-color: var(--white);
+  border-radius: 25px;
+  border-bottom-right-radius: 50%;
+  padding: 4rem;
+}
+.inputs {
+  display: flex;
+}
+
+// <div class="inputs">
+// <div class="day">
+//   <label for="day--input">Day</label>
+//   <input
+//     type="number"
+//     required
+//     placeholder="DD"
+//     maxlength="2"
+//     min="1"
+//     max="31"
+//     oninput="this.value = this.value.slice(0, 2);"
+//   />
+// </div>
+// <div class="month">
+//   <label for="month--input">Month</label>
+//   <input
+//     type="number"
+//     required
+//     placeholder="MM"
+//     maxlength="2"
+//     min="1"
+//     max="31"
+//     oninput="this.value = this.value.slice(0, 2);"
+//   />
+// </div>
+// <div class="year">
+//   <label for="year--input">Year</label>
+//   <input
+//     type="number"
+//     required
+//     placeholder="YYYY"
+//     maxlength="4"
+//     oninput="this.value = this.value.slice(0, 4);"
+//   />
+// </div>
+// <button class="btn"><img src="assets/images/icon-arrow.svg" alt="ArrowButton" /></button>
+// </div>
+// <div class="calculated">
+// <div class="calculated-years">
+//   <span class="calculated-years--result">--</span>
+//   <p>Years</p>
+// </div>
+// <div class="calculated-months">
+//   <span class="calculated-months--result">--</span>
+//   <p>Months</p>
+// </div>
+// <div class="calculated-days">
+//   <span class="calculated-days--result">--</span>
+//   <p>Days</p>
+// </div>
+// </div>
+// </div>

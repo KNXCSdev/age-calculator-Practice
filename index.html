@@ -1,37 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Age calculator app</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
-
-  Day
-  DD
-
-  Month
-  MM
-
-  Year
-  YYYY
-
-  -- years
-  -- months
-  -- days
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png" />
+    <link rel="stylesheet" href="css/main.css" />
+    <title>Frontend Mentor | Age calculator app</title>
+    <script defer src="main.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="inputs">
+        <div class="day">
+          <label for="day--input">Day</label>
+          <input
+            type="number"
+            required
+            placeholder="DD"
+            maxlength="2"
+            min="1"
+            max="31"
+            oninput="this.value = this.value.slice(0, 2);"
+          />
+        </div>
+        <div class="month">
+          <label for="month--input">Month</label>
+          <input
+            type="number"
+            required
+            placeholder="MM"
+            maxlength="2"
+            min="1"
+            max="31"
+            oninput="this.value = this.value.slice(0, 2);"
+          />
+        </div>
+        <div class="year">
+          <label for="year--input">Year</label>
+          <input
+            type="number"
+            required
+            placeholder="YYYY"
+            maxlength="4"
+            oninput="this.value = this.value.slice(0, 4);"
+          />
+        </div>
+        <button class="btn"><img src="assets/images/icon-arrow.svg" alt="ArrowButton" /></button>
+      </div>
+      <div class="calculated">
+        <div class="calculated-years">
+          <span class="calculated-years--result">--</span>
+          <p>Years</p>
+        </div>
+        <div class="calculated-months">
+          <span class="calculated-months--result">--</span>
+          <p>Months</p>
+        </div>
+        <div class="calculated-days">
+          <span class="calculated-days--result">--</span>
+          <p>Days</p>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>

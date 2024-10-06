@@ -1,0 +1,46 @@
+:root {
+  --purple: hsl(259, 100%, 65%);
+  --lightred: hsl(0, 100%, 67%);
+  --white: hsl(0, 0%, 100%);
+  --offwhite: hsl(0, 0%, 94%);
+  --lightgrey: hsl(0, 0%, 86%);
+  --smokeygrey: hsl(0, 1%, 44%);
+  --offblack: hsl(0, 0%, 8%);
+}
+
+html {
+  font-size: 62.5%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  line-height: 1;
+  background-color: var(--offwhite);
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+
+input {
+  font-size: 3.2rem;
+}
+
+.container {
+  max-width: 120rem;
+  margin: 0 auto;
+  background-color: var(--white);
+  border-radius: 25px;
+  border-bottom-right-radius: 50%;
+  padding: 4rem;
+}
+
+.inputs {
+  display: flex;
+}
