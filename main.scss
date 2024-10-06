@@ -16,7 +16,7 @@ html {
   box-sizing: border-box;
 }
 body {
-  font-family: sans-serif;
+  font-family: "Poppins", sans-serif;
   line-height: 1;
   background-color: var(--offwhite);
   display: flex;
@@ -26,7 +26,27 @@ body {
 }
 input {
   font-size: 3.2rem;
+  border: none;
+  border-radius: 5px;
+  outline: 1px solid var(--lightgrey);
+  padding: 1rem 2rem;
+  width: 14rem;
+  font-weight: 700;
+
+  &:focus {
+    outline: 1px solid var(--purple);
+  }
 }
+
+label {
+  font-weight: 700;
+  font-size: 1.3rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--smokeygrey);
+  margin-bottom: 1rem;
+}
+
 .container {
   max-width: 120rem;
   margin: 0 auto;
@@ -37,44 +57,57 @@ input {
 }
 .inputs {
   display: flex;
+  align-items: center;
+  gap: 3rem;
+  border-bottom: 2px solid var(--lightgrey);
+  padding-bottom: 3rem;
+  position: relative;
+  &-day,
+  &-month,
+  &-year {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
-// <div class="inputs">
-// <div class="day">
-//   <label for="day--input">Day</label>
-//   <input
-//     type="number"
-//     required
-//     placeholder="DD"
-//     maxlength="2"
-//     min="1"
-//     max="31"
-//     oninput="this.value = this.value.slice(0, 2);"
-//   />
-// </div>
-// <div class="month">
-//   <label for="month--input">Month</label>
-//   <input
-//     type="number"
-//     required
-//     placeholder="MM"
-//     maxlength="2"
-//     min="1"
-//     max="31"
-//     oninput="this.value = this.value.slice(0, 2);"
-//   />
-// </div>
-// <div class="year">
-//   <label for="year--input">Year</label>
-//   <input
-//     type="number"
-//     required
-//     placeholder="YYYY"
-//     maxlength="4"
-//     oninput="this.value = this.value.slice(0, 4);"
-//   />
-// </div>
-// <button class="btn"><img src="assets/images/icon-arrow.svg" alt="ArrowButton" /></button>
+.btn {
+  margin-left: 2rem;
+  border-radius: 50%;
+  width: 7rem;
+  height: 7rem;
+  transform: translateY(100%);
+  border: none;
+  background-color: var(--offblack);
+  cursor: pointer;
+}
+
+.calculated {
+  display: flex;
+  flex-direction: column;
+
+  margin-top: 3rem;
+  font-weight: 900;
+
+  &-years,
+  &-months,
+  &-days {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    &--result {
+      font-size: 8rem;
+      color: var(--purple);
+    }
+
+    &--description {
+      font-size: 6.4rem;
+      text-transform: lowercase;
+      font-style: italic;
+      font-weight: 900;
+    }
+  }
+}
+
 // </div>
 // <div class="calculated">
 // <div class="calculated-years">

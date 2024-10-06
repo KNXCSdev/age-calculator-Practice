@@ -7,13 +7,19 @@
 
     <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png" />
     <link rel="stylesheet" href="css/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
     <title>Frontend Mentor | Age calculator app</title>
     <script defer src="main.js"></script>
   </head>
   <body>
     <div class="container">
       <div class="inputs">
-        <div class="day">
+        <div class="inputs-day">
           <label for="day--input">Day</label>
           <input
             type="number"
@@ -25,7 +31,7 @@
             oninput="this.value = this.value.slice(0, 2);"
           />
         </div>
-        <div class="month">
+        <div class="inputs-month">
           <label for="month--input">Month</label>
           <input
             type="number"
@@ -37,7 +43,7 @@
             oninput="this.value = this.value.slice(0, 2);"
           />
         </div>
-        <div class="year">
+        <div class="inputs-year">
           <label for="year--input">Year</label>
           <input
             type="number"
@@ -47,20 +53,21 @@
             oninput="this.value = this.value.slice(0, 4);"
           />
         </div>
+
         <button class="btn"><img src="assets/images/icon-arrow.svg" alt="ArrowButton" /></button>
       </div>
       <div class="calculated">
         <div class="calculated-years">
-          <span class="calculated-years--result">--</span>
-          <p>Years</p>
+          <em class="calculated-years--result">- -</em>
+          <p class="calculated-years--description">Years</p>
         </div>
         <div class="calculated-months">
-          <span class="calculated-months--result">--</span>
-          <p>Months</p>
+          <em class="calculated-months--result">- -</em>
+          <p class="calculated-months--description">Months</p>
         </div>
         <div class="calculated-days">
-          <span class="calculated-days--result">--</span>
-          <p>Days</p>
+          <em class="calculated-days--result">- -</em>
+          <p class="calculated-days--description">Days</p>
         </div>
       </div>
     </div>
