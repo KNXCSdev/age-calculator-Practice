@@ -77,7 +77,7 @@ label {
   border-radius: 50%;
   width: 7rem;
   height: 7rem;
-  transform: translateY(100%);
+  transform: translateY(115%);
   border: none;
   background-color: var(--purple);
   cursor: pointer;
@@ -106,4 +106,10 @@ label {
   text-transform: lowercase;
   font-style: italic;
   font-weight: 900;
+}
+
+.error-message {
+  color: red;
+  margin-top: 1rem;
+  font-size: 1.2rem;
 }
