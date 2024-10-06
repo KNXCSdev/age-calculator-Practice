@@ -52,7 +52,7 @@ label {
   margin: 0 auto;
   background-color: var(--white);
   border-radius: 25px;
-  border-bottom-right-radius: 50%;
+  border-bottom-right-radius: 35%;
   padding: 4rem;
 }
 .inputs {
@@ -77,8 +77,11 @@ label {
   height: 7rem;
   transform: translateY(100%);
   border: none;
-  background-color: var(--offblack);
+  background-color: var(--purple);
   cursor: pointer;
+  &:active {
+    background-color: var(--offblack);
+  }
 }
 
 .calculated {
@@ -107,20 +110,3 @@ label {
     }
   }
 }
-
-// </div>
-// <div class="calculated">
-// <div class="calculated-years">
-//   <span class="calculated-years--result">--</span>
-//   <p>Years</p>
-// </div>
-// <div class="calculated-months">
-//   <span class="calculated-months--result">--</span>
-//   <p>Months</p>
-// </div>
-// <div class="calculated-days">
-//   <span class="calculated-days--result">--</span>
-//   <p>Days</p>
-// </div>
-// </div>
-// </div>

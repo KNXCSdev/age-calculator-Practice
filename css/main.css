@@ -55,7 +55,7 @@ label {
   margin: 0 auto;
   background-color: var(--white);
   border-radius: 25px;
-  border-bottom-right-radius: 50%;
+  border-bottom-right-radius: 35%;
   padding: 4rem;
 }
 
@@ -79,8 +79,11 @@ label {
   height: 7rem;
   transform: translateY(100%);
   border: none;
-  background-color: var(--offblack);
+  background-color: var(--purple);
   cursor: pointer;
+}
+.btn:active {
+  background-color: var(--offblack);
 }
 
 .calculated {
