@@ -20,7 +20,7 @@
     <div class="container">
       <div class="inputs">
         <div class="inputs-day">
-          <label for="day--input">Day</label>
+          <label for="day--input" class="error1">Day</label>
           <input
             type="number"
             required
@@ -31,9 +31,10 @@
             oninput="this.value = this.value.slice(0, 2);"
             class="day--input"
           />
+          <span class="error-message" id="day-error">&nbsp;</span>
         </div>
         <div class="inputs-month">
-          <label for="month--input">Month</label>
+          <label for="month--input" class="error2">Month</label>
           <input
             type="number"
             required
@@ -44,9 +45,10 @@
             oninput="this.value = this.value.slice(0, 2);"
             class="month--input"
           />
+          <span class="error-message" id="month-error">&nbsp;</span>
         </div>
         <div class="inputs-year">
-          <label for="year--input">Year</label>
+          <label for="year--input" class="error3">Year</label>
           <input
             type="number"
             required
@@ -55,6 +57,7 @@
             oninput="this.value = this.value.slice(0, 4);"
             class="year--input"
           />
+          <span class="error-message" id="year-error">&nbsp;</span>
         </div>
 
         <button class="btn"><img src="assets/images/icon-arrow.svg" alt="ArrowButton" /></button>
